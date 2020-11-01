@@ -1,0 +1,9 @@
+[submodule "vim"]
+	path = vim/.vim
+	url = https://github.com/fesaille/.vim.git
+[submodule "zsh"]
+	path = zsh/.zsh
+	url = https://github.com/fesaille/.zsh.git
+[submodule "tmux"]
+	path = tmux/.tmux
+	url = https://github.com/fesaille/.tmux.git
