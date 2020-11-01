@@ -6,7 +6,7 @@
 [core]
     ; excludesfile = ~/.gitignore_global
     editor = vim
-    pager = /usr/bin/cat 
+    pager = /usr/bin/cat
 [filter "lfs"]
     clean = git-lfs clean -- %f
     smudge = git-lfs smudge -- %f
@@ -55,4 +55,3 @@
   added = yellow bold
   changed = green bold
   untracked = red bold
-
