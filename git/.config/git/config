@@ -15,7 +15,7 @@
 [push]
     default = simple
 [alias]
-    add-commit = !git add -A && git commit
+    ac = !git add -u && git commit
     c = commit
     can = commit --amend --no-edit
     cm = commit -m
