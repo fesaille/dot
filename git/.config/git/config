@@ -6,7 +6,8 @@
 [core]
     ; excludesfile = ~/.gitignore_global
     editor = vim
-    pager = /usr/bin/cat
+    ; pager = /usr/bin/cat
+    pager = delta
 [filter "lfs"]
     clean = git-lfs clean -- %f
     smudge = git-lfs smudge -- %f
@@ -20,9 +21,10 @@
     can = commit --amend --no-edit
     cm = commit -m
     co = checkout
+	cp = cherry-pick
     dog = log --all --decorate --oneline --graph
     files = !git diff --name-only $(git merge-base HEAD \"$REVIEW_BASE\")
-    l = log --date=short --decorate --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]"
+    l = log -n 10 --date=short --decorate --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]"
     # log specific https://stackoverflow.com/questions/1838873/visualizing-branch-topology-in-git/34467298#34467298
     lg = !"git lg1"
     lg1 = !"git lg1-specific --all"
@@ -41,6 +43,7 @@
 [diff]
     algorithm = histogram
 [github]
+
 [blame]
     date = relative
 [rebase]
@@ -55,3 +58,7 @@
   added = yellow bold
   changed = green bold
   untracked = red bold
+[delta]
+    side-by-side = true
+[interactive]
+    diffFilter = delta --color-only
