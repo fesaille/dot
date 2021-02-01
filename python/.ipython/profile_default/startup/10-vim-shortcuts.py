@@ -1,3 +1,5 @@
+# https://ipython.readthedocs.io/en/stable/config/details.html?highlight=pt_app#keyboard-shortcuts
+
 from IPython import get_ipython
 from prompt_toolkit.enums import DEFAULT_BUFFER
 from prompt_toolkit.filters import HasFocus, ViInsertMode
