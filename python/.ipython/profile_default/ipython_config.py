@@ -1,5 +1,3 @@
-c = get_config()
-
 try:
     import watermark
 except ModuleNotFoundError:
