@@ -120,3 +120,5 @@ source "$HOME/.cargo/env"
 source <(starship init bash)
 eval "$(zoxide init bash)"
 # source <(jump shell bash)
+
+complete -C /home/manu/.arkade/bin/mc mc
